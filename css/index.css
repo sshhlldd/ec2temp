@@ -391,6 +391,13 @@ img {
   .flowcon h3 {
     font-size: 24px;
   }
+  .flowcon .flowflex {
+    -moz-column-count: 1;
+    /* Firefox */
+    -webkit-column-count: 1;
+    /* Safari 和 Chrome */
+    column-count: 1;
+  }
   .flowcon .pro-name {
     font-size: 18px;
   }
