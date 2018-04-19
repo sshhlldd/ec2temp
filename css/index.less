@@ -107,12 +107,15 @@ img {
     display: -webkit-flex; /* Safari */
     display: flex;
     flex-direction: row; 
-    justify-content:center;
-    align-items:stretch;
+/*     align-items:stretch; */
+    flex-wrap:wrap;
+    width:100%;
+    margin-top: 3%;
     .innerbox{
-   margin:3% 1%;
-   padding:2%;
+   margin:1%;
+   padding:1.5%;
    border:1px solid @boder-color;
+   width: 28%;
    background: #fff;
    transition: .5s ease-in;
    -webkit-transition: .5s ease-in;
@@ -162,6 +165,7 @@ img {
     }
 }
 .flowcon{
+    margin-top: 3%;
     label.line {
         width: 150px;
         height: 2px;
@@ -184,7 +188,7 @@ img {
         -moz-column-gap: 1em;
       -webkit-column-gap: 1em;
       column-gap: 1em;
-      margin:3% 1% 0 1%;
+      margin:3% 1% 2% 1%;
     }
     /*一个内容层*/
     .item{
@@ -197,7 +201,11 @@ img {
     }
     .item img{
         width: 100%;
-        margin-bottom:10px;
+        cursor: pointer;  
+        transition: all 0.6s;
+        &:hover{
+            transform: scale(1.2);  
+        }
     }
     .pro-name{
      font-size:20px;
@@ -206,6 +214,11 @@ img {
      font-size:14px;
      color:#999;
      margin:7px 0;
+    }
+    .imgcon{
+        width:100%;
+        margin-bottom:10px;
+        overflow: hidden;    
     }
 }
 /*footer*/
@@ -413,6 +426,7 @@ img {
     }
     .flexbox{
         flex-direction: column; 
+        .innerbox{width:95%;}
     }
     .flowcon{
         label.line {

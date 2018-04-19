@@ -102,13 +102,16 @@ img {
   /* Safari */
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: stretch;
+  /*     align-items:stretch; */
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 3%;
 }
 .flexbox .innerbox {
-  margin: 3% 1%;
-  padding: 2%;
+  margin: 1%;
+  padding: 1.5%;
   border: 1px solid #e5e5e5;
+  width: 28%;
   background: #fff;
   transition: 0.5s ease-in;
   -webkit-transition: 0.5s ease-in;
@@ -157,6 +160,7 @@ img {
   animation-name: swing;
 }
 .flowcon {
+  margin-top: 3%;
   /*一个内容层*/
 }
 .flowcon label.line {
@@ -183,7 +187,7 @@ img {
   -moz-column-gap: 1em;
   -webkit-column-gap: 1em;
   column-gap: 1em;
-  margin: 3% 1% 0 1%;
+  margin: 3% 1% 2% 1%;
 }
 .flowcon .item {
   padding: 0.4em;
@@ -195,7 +199,11 @@ img {
 }
 .flowcon .item img {
   width: 100%;
-  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.6s;
+}
+.flowcon .item img:hover {
+  transform: scale(1.2);
 }
 .flowcon .pro-name {
   font-size: 20px;
@@ -204,6 +212,11 @@ img {
   font-size: 14px;
   color: #999;
   margin: 7px 0;
+}
+.flowcon .imgcon {
+  width: 100%;
+  margin-bottom: 10px;
+  overflow: hidden;
 }
 /*footer*/
 .footer .footer-middle {
@@ -384,6 +397,9 @@ img {
   }
   .flexbox {
     flex-direction: column;
+  }
+  .flexbox .innerbox {
+    width: 95%;
   }
   .flowcon label.line {
     width: 150px;
