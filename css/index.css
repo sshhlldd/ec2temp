@@ -256,7 +256,7 @@ img {
   color: #B3B3B3;
 }
 .footer .footer-middle label.line {
-  width: 110px;
+  width: 100px;
   height: 2px;
   display: block;
   background: #8fb13d;
@@ -382,7 +382,7 @@ img {
     width: 66%;
   }
   .flowcon label.line {
-    width: 107px;
+    width: 100px;
   }
   .flowcon h3 {
     font-size: 20px;
@@ -438,7 +438,7 @@ img {
     width: 95%;
   }
   .flowcon label.line {
-    width: 150px;
+    width: 90px;
   }
   .flowcon h3 {
     font-size: 24px;
@@ -457,7 +457,7 @@ img {
     font-size: 14px;
   }
   .footer .footer-middle label.line {
-    width: 100px;
+    width: 90px;
   }
   .footer .footer-middle h3 {
     font-size: 24px;
@@ -489,7 +489,7 @@ img {
     width: 970px;
   }
   .flowcon label.line {
-    width: 120px;
+    width: 100px;
   }
   .flowcon h3 {
     font-size: 30px;
@@ -502,7 +502,7 @@ img {
     column-count: 4;
   }
   .footer .footer-middle label.line {
-    width: 135px;
+    width: 100px;
   }
   .footer .footer-middle h3 {
     font-size: 30px;
