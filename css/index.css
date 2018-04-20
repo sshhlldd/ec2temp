@@ -74,10 +74,26 @@ img {
 .ec-header .shopping-cart {
   text-align: right;
   float: right;
-  position: relative;
+  width: 35%;
 }
 .ec-header .shopping-cart .car {
   color: #fff;
+  display: inline-block;
+  position: relative;
+}
+.ec-header .shopping-cart .user {
+  display: inline-block;
+  width: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  background: #fff;
+  margin-right: 2%;
+}
+.ec-header .shopping-cart .user img {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  vertical-align: bottom;
 }
 .ec-header .shopping-cart .car em {
   font-size: 0.9rem;
@@ -250,6 +266,7 @@ img {
   background: #000;
   padding: 1em 0;
   text-align: center;
+  color: #777;
 }
 .footer .footer-bottom a {
   color: #8fb13d;
@@ -377,6 +394,9 @@ img {
   .footer .footer-middle .iconfont {
     font-size: 30px;
   }
+  .footer .footer-bottom {
+    font-size: 12px;
+  }
 }
 @media (max-width: 568px) {
   .ec-header .logo {
@@ -394,6 +414,7 @@ img {
   .ec-header .shopping-cart {
     padding: 0;
     margin-top: 2px;
+    width: 65%;
   }
   .flexbox {
     flex-direction: column;
@@ -433,6 +454,13 @@ img {
 @media (min-width: 768px) {
   .container {
     width: 750px;
+  }
+  .ec-header .shopping-cart .user {
+    width: 26px;
+    border-radius: 13px;
+  }
+  .ec-header .shopping-cart .user img {
+    border-radius: 13px;
   }
 }
 @media (min-width: 1000px) {
