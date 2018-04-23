@@ -15,6 +15,10 @@ a {
 html {
   font-size: 62.5%;
 }
+ul,
+li {
+  list-style: none;
+}
 body {
   font-family: "微软雅黑", Helvetica, Arial, sans-serif;
   font-size: 14px;
