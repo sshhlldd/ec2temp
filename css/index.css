@@ -274,12 +274,64 @@ img {
   text-align: center;
   font-weight: normal;
 }
-.footer .footer-middle .wrap {
-  text-align: center;
-  margin: 3% 0;
+.footer .footer-middle .map {
+  margin-top: 3%;
+}
+.footer .footer-middle h4 {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 2%;
+}
+.footer .footer-middle .flexcon {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 3%;
+  justify-content: center;
+}
+.footer .footer-middle .flexcon .wrap {
+  margin: 1%;
+  padding: 1.5%;
+  width: 44%;
+}
+.footer .footer-middle .flexcon form input[type="text"],
+.footer .footer-middle .flexcon form input[type="number"] {
+  width: 100%;
+  padding: 3% 0;
+  font-weight: 600;
+  text-indent: 20px;
+  color: #616161;
+  outline: none;
+  border: solid 1px #747576;
+  margin-bottom: 2.5%;
+  background: none;
+}
+.footer .footer-middle .flexcon form textarea {
+  width: 100%;
+  resize: none;
+  padding: 3% 0;
+  font-weight: 600;
+  text-indent: 20px;
+  color: #616161;
+  outline: none;
+  border: solid 1px #747576;
+  margin-bottom: 5%;
+  background: none;
+  min-height: 120px;
+}
+.footer .footer-middle .flexcon form input[type="submit"] {
+  padding: 6px 30px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 300;
+  border: none;
 }
 .footer .footer-middle .iconfont {
-  font-size: 30px;
+  font-size: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
 }
 .footer .footer-bottom {
   background: #000;
@@ -410,8 +462,8 @@ img {
   .footer .footer-middle h3 {
     font-size: 20px;
   }
-  .footer .footer-middle .iconfont {
-    font-size: 30px;
+  .footer .footer-middle .flexcon .wrap {
+    width: 96%;
   }
   .footer .footer-bottom {
     font-size: 12px;
@@ -466,8 +518,8 @@ img {
   .footer .footer-middle h3 {
     font-size: 24px;
   }
-  .footer .footer-middle .iconfont {
-    font-size: 30px;
+  .footer .footer-middle .flexcon .wrap {
+    width: 96%;
   }
 }
 @media (min-width: 768px) {
@@ -509,9 +561,6 @@ img {
     width: 100px;
   }
   .footer .footer-middle h3 {
-    font-size: 30px;
-  }
-  .footer .footer-middle .iconfont {
     font-size: 30px;
   }
 }

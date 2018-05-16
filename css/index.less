@@ -270,12 +270,66 @@ img {
             text-align: center;
             font-weight: normal;
         }
-        .wrap{
-            text-align: center;
-            margin: 3% 0;
+        .map{
+            margin-top:3%;
+        }
+        h4{
+            font-size: 20px;
+            font-weight: normal;
+            margin-bottom:2%;
+        }
+        .flexcon{
+            display: -webkit-flex;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-top: 3%; 
+            justify-content:center; 
+            .wrap{
+                margin:1%;
+                padding:1.5%;
+                width: 44%;
+              
+            }
+            form input[type="text"], form input[type="number"] {
+                width: 100%;
+                padding: 3% 0;
+                font-weight: 600;
+                text-indent: 20px;
+                color: #616161;
+                outline: none;
+                border: solid 1px #747576;
+                margin-bottom: 2.5%;
+                background: none;
+                
+            }
+            form textarea {
+                width: 100%;
+                resize: none;
+                padding: 3% 0;
+                font-weight: 600;
+                text-indent: 20px;
+                color: #616161;
+                outline: none;
+                border: solid 1px #747576;
+                margin-bottom: 5%;
+                background: none;
+                min-height: 120px;
+            }
+            form input[type="submit"]{
+              padding: 6px 30px;
+              border-radius: 5px;  
+              font-size: 18px;
+              font-weight: 300;
+              border: none;
+            }
+            
         }
         .iconfont{
-            font-size:30px;
+            font-size:20px;
+            margin-right:5px;
+            vertical-align: middle;
         }
     }  
     .footer-bottom {
@@ -428,8 +482,11 @@ img {
             h3 {
                 font-size: 20px;
             }
-            .iconfont{
-                font-size:30px;
+            .flexcon{
+                .wrap{
+                    width: 96%;
+                  
+                }
             }
         } 
        .footer-bottom{
@@ -488,8 +545,11 @@ img {
             h3 {
                 font-size: 24px;
             }
-            .iconfont{
-                font-size:30px;
+            .flexcon{
+                .wrap{
+                    width: 96%;
+                  
+                }
             }
         }  
     }
@@ -544,9 +604,6 @@ img {
         }
         h3 {
             font-size: 30px;
-        }
-        .iconfont{
-            font-size:30px;
         }
     }  
 }
