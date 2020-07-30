@@ -310,7 +310,24 @@ img {
     background: -moz-linear-gradient(right, transparent, #fff 55%);
     background: linear-gradient(to right, transparent, #fff 55%);
 }
-
+.pro-price{
+    margin-bottom:10px;
+}
+.pro-price .tp em{
+ font-size:12px;
+ font-style: normal;
+ color:#555;
+}
+.pro-price .tp{
+ font-size:20px;
+ color: #8fb13d;
+}
+.pro-price .op{
+    font-size: 12px;
+    padding-left:7px;
+    color:#999;
+    text-decoration:line-through;
+}
 .flowcon .imgcon {
     width: 100%;
     margin-bottom: 10px;
