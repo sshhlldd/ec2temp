@@ -304,6 +304,113 @@ img {
   text-decoration: line-through;
 }
 
+.flowcon-1 {
+  margin-top: 3%;
+  /*一个内容层*/
+}
+
+.flowcon-1 label.line {
+  width: 150px;
+  height: 2px;
+  display: block;
+  background: #8fb13d;
+  border-radius: 10px;
+  margin: 0.2em auto;
+}
+
+.flowcon-1 h3 {
+  font-size: 26px;
+  line-height: 1.8em;
+  text-align: center;
+  color: #2e2e2e;
+  font-weight: normal;
+}
+
+.flowcon-1 .flowflex {
+  /* Safari */
+  display: flex;
+  flex-direction: row;
+  /*     align-items:stretch; */
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 2% 0% 2% 0%;
+  box-sizing: border-box;
+}
+
+.flowcon-1 .item {
+  margin: 1%;
+  padding: 1.5%;
+  border: 1px solid #e5e5e5;
+  width: 44%;
+  transition: 0.5s ease-in;
+  -webkit-transition: 0.5s ease-in;
+  -moz-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in;
+  -ms-transition: 0.5s ease-in;
+  border: 1px solid #e5e5e5;
+}
+
+.flowcon-1 .item img {
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.6s;
+}
+
+.flowcon-1 .item img:hover {
+  transform: scale(1.2);
+}
+
+.flowcon-1 .pro-name {
+  font-size: 16px;
+}
+
+.flowcon-1 .pro-desc {
+  font-size: 14px;
+  color: #999;
+  margin: 7px 0;
+  position: relative;
+  line-height: 20px;
+  max-height: 40px;
+  overflow: hidden;
+}
+
+.flowcon-1 .pro-desc:after {
+  content: "...";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-left: 40px;
+  background: linear-gradient(to right, transparent, #fff 55%);
+}
+
+.flowcon-1 .imgcon {
+  width: 100%;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.flowcon-1 .pro-price {
+  margin-bottom: 10px;
+}
+
+.flowcon-1 .pro-price .tp {
+  font-size: 20px;
+  color: #8fb13d;
+}
+
+.flowcon-1 .pro-price .tp em {
+  font-size: 12px;
+  font-style: normal;
+  color: #555;
+}
+
+.flowcon-1 .pro-price .op {
+  font-size: 12px;
+  padding-left: 7px;
+  color: #999;
+  text-decoration: line-through;
+}
+
 /*footer*/
 .footer .footer-middle {
   background: #1f1f1f;
@@ -634,6 +741,18 @@ img {
   .flowcon .pro-desc {
     font-size: 12px;
   }
+  .flowcon-1 label.line {
+    width: 90px;
+  }
+  .flowcon-1 h3 {
+    font-size: 24px;
+  }
+  .flowcon-1 .item {
+    margin: 1%;
+    padding: 1.5%;
+    border: 1px solid #e5e5e5;
+    width: 44%;
+  }
   .footer .footer-middle label.line {
     width: 90px;
   }
@@ -671,6 +790,18 @@ img {
     /* Firefox */
     /* Safari 和 Chrome */
     column-count: 4;
+  }
+  .flowcon-1 label.line {
+    width: 100px;
+  }
+  .flowcon-1 h3 {
+    font-size: 30px;
+  }
+  .flowcon-1 .item {
+    margin: 1%;
+    padding: 1.5%;
+    border: 1px solid #e5e5e5;
+    width: 19%;
   }
   .footer .footer-middle label.line {
     width: 100px;

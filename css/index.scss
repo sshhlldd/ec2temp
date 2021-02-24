@@ -320,7 +320,117 @@ img {
   }
 
 }
+.flowcon-1 {
+  margin-top: 3%;
+  label.line {
+    width: 150px;
+    height: 2px;
+    display: block;
+    background: $main-color;
+    border-radius: 10px;
+    margin: 0.2em auto;
+  }
 
+  h3 {
+    font-size: 26px;
+    line-height: 1.8em;
+    text-align: center;
+    color: #2e2e2e;
+    font-weight: normal;
+  }
+
+  .flowflex {
+    display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  flex-direction: row;
+  /*     align-items:stretch; */
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 2% 0% 2% 0%;
+  box-sizing:border-box;
+  }
+
+  /*一个内容层*/
+  .item {
+    margin: 1%;
+    padding: 1.5%;
+    border: 1px solid #e5e5e5;
+    width: 44%;
+    transition: 0.5s ease-in;
+    -webkit-transition: 0.5s ease-in;
+    -moz-transition: 0.5s ease-in;
+    -o-transition: 0.5s ease-in;
+    -ms-transition: 0.5s ease-in;
+    border: 1px solid $boder-color;
+
+    img {
+      width: 100%;
+      
+      cursor: pointer;
+      transition: all 0.6s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  .pro-name {
+    font-size: 16px;
+  }
+
+  .pro-desc {
+    font-size: 14px;
+    color: #999;
+    margin: 7px 0;
+    position: relative;
+    line-height: 20px;
+    max-height: 40px;
+    overflow: hidden;
+
+    &:after {
+      content: "...";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding-left: 40px;
+      background: -webkit-linear-gradient(left, transparent, #fff 55%);
+      background: -o-linear-gradient(right, transparent, #fff 55%);
+      background: -moz-linear-gradient(right, transparent, #fff 55%);
+      background: linear-gradient(to right, transparent, #fff 55%);
+    }
+  }
+
+  .imgcon {
+    width: 100%;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+
+  .pro-price {
+    margin-bottom: 10px;
+
+    .tp {
+      font-size: 20px;
+      color: #8fb13d;
+
+      em {
+        font-size: 12px;
+        font-style: normal;
+        color: #555;
+      }
+    }
+
+    .op {
+      font-size: 12px;
+      padding-left: 7px;
+      color: #999;
+      text-decoration: line-through;
+    }
+  }
+
+}
 /*footer*/
 .footer {
   .footer-middle {
@@ -680,7 +790,21 @@ img {
       font-size: 12px;
     }
   }
+  .flowcon-1 {
+    label.line {
+      width: 90px;
+    }
 
+    h3 {
+      font-size: 24px;
+    }
+    .item {
+      margin: 1%;
+      padding: 1.5%;
+      border: 1px solid #e5e5e5;
+      width: 44%;
+    }
+  }
   .footer {
     .footer-middle {
       label.line {
@@ -738,7 +862,21 @@ img {
       column-count: 4;
     }
   }
+  .flowcon-1 {
+    label.line {
+      width: 100px;
+    }
 
+    h3 {
+      font-size: 30px;
+    }
+    .item {
+      margin: 1%;
+      padding: 1.5%;
+      border: 1px solid #e5e5e5;
+      width: 19%;
+    }
+  }
   .footer {
     .footer-middle {
       label.line {
