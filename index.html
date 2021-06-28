@@ -5,11 +5,14 @@
     <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <!-- <link href="http://site.full2house.com/User/../Public/bootstrap/css/bootstrap.min.css?version=1.1.5" rel="stylesheet" type="text/css"> -->
+    <link href="http://site.full2house.com/Public/bootstrap/css/bootstrap.min.css?version=1.1.5" rel="stylesheet"
+        type="text/css">
     <link href="css/index.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/iconfont.css" rel="stylesheet" type="text/css" />
     <link href="css/animate.css" rel="stylesheet" type="text/css" />
     <script src="js/jquery.min.js"></script>
+    <script src="http://site.full2house.com/Public/bootstrap/js/bootstrap.min.js?version=1.1.7"></script>
+
 </head>
 
 <body>
@@ -169,7 +172,9 @@
                         <p class="pro-desc">【賞味期限】: 宅配到貨3天 【保存方式】</p>
                         <p class="pro-price"><span class="tp"><em>NT$</em>99</span><span class="op">NT$199</span></p>
                         <p class="btncon">
-                            <a class="btn btn-green animated" href="">立即購買</a>
+                            <a class="btn btn-default btn-sm proDetails" href="javascript:;">详情</a>
+                            <a class="btn btn-green btn-sm animated addToCart" href="javascript:;">加入购物车</a>
+
                         </p>
                     </div>
                     <div class="item">
@@ -310,8 +315,85 @@
         </div>
     </div>
     <!--//footer-->
-    <!-- slide -->
-    <!--  <script src="js/bootstrap.min.js"></script> -->
+    <div class="modal fade cartModal" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <div class="modal-title">
+                        <div class="pic">
+                            <img src="http://ec2.full2house.com/Upload/Form/Files/201803/201803271743496788.jpg">
+                        </div>
+                        <div class="tit">
+                            <p class="price"><em>NT$</em>99</p>
+                            <p>【格林貝可創藝塔專賣】GREEN BAKERY 齒輪布丁</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-cont">
+                    <div class="nums">
+                        <p>数量</p>
+                        <div class="cont">
+                            <a class="plus jian">-</a>
+                            <div class="numberInput">
+                                <input class="num" min="1" type="number" value="1">
+                            </div>
+                            <a class="reduce jia">+</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-green btn-lg" style="width:100%;">确定</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+    <div class="modal fade cartModal" id="detaelModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-cont">
+
+                    
+                    <div>
+                        <div class="imgcon"><img src="http://ec2.full2house.com/Upload/Form/Files/201803/201803271743496788.jpg" alt=""></div>                       
+                        <p class="pro-name">AJ3黑水泥</p>
+                        <p class="pro-desc">傳奇球鞋設計師 Tinker Hatfield 在經過與 Michael Jordan 的對談後，打造出創新的 Air Jordan 3，不但成功地為
+                            Nike 留住了這位偉大的球員，同時也開創了後續一系列的經典鞋款。而身為 Air Jordan 3 中最具標誌性的配色 Black Cement，同樣被許多名人如
+                            Jay-Z、Kanye West、Kendrick Lamar 等人多次著用，在日前也終於傳出將於明年 2018 年 2 月正式復刻，這雙鞋履首度登場為
+                            1988 年，隨後共回歸了四次，分別為 1994、2001、2008、2011 年。</p>
+                            <div class="imgcon"><img src="http://ec2.full2house.com/Upload/Form/Files/201803/201803271743496788.jpg" alt=""></div> 
+                            <p class="pro-desc">新疆西藏不发货</p> 
+                        <div class="tit">
+                            <p class="price"><em>NT$</em>99</p>
+                        </div>
+                    </div>
+                    <div class="nums">
+                        <p>数量</p>
+                        <div class="cont">
+                            <a class="plus jian">-</a>
+                            <div class="numberInput">
+                                <input class="num" min="1" type="number" value="1">
+                            </div>
+                            <a class="reduce jia">+</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-lg" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-green btn-lg">加入购物车</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
     <script src="./js/base.js"></script>
     <script src="./js/touchwipe.min.js"></script>
     <script type="text/javascript" charset="utf-8">
@@ -328,6 +410,35 @@
                     bgcolor: '#8fb13d'
                 });
             })
+
+            $('.proDetails').click(function () {
+                $('#detaelModal').modal('show');
+            })
+            $('.addToCart').click(function () {
+                $('#cartModal').modal('show');
+            })
+            $(document).on('click', '.jian', function (e) {
+                var par = $(this).closest('.cont');
+                var num = parseInt(par.find('.num').val());
+                if (num == 1) {
+                    return false;
+                }
+
+                num--;
+                par.find('.num').val(num);
+            });
+            $(document).on('click', '.jia', function (e) {
+                var par = $(this).closest('.cont');
+                var num = parseInt(par.find('.num').val());
+                num++;
+                par.find('.num').val(num);
+            });
+            $(document).on('blur', '.num', function (e) {
+                var num = $(this).val();
+                if (num == '' || num < 1) {
+                    $(this).val('1');
+                }
+            });
 
         })
     </script>

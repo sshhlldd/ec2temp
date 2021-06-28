@@ -13,6 +13,7 @@ li,
 a {
   padding: 0;
   margin: 0;
+  text-decoration: none;
 }
 
 html {
@@ -149,7 +150,8 @@ img {
   margin: 1%;
   padding: 1.5%;
   border: 1px solid #e5e5e5;
-  width: 44%;
+  box-sizing: border-box;
+  width: 48%;
   background: #fff;
   transition: 0.5s ease-in;
   -webkit-transition: 0.5s ease-in;
@@ -164,10 +166,23 @@ img {
 }
 
 .flexbox .innerbox .desc {
-  color: #999;
   margin-top: 3%;
   text-indent: 2em;
-  line-height: 170%;
+  font-size: 14px;
+  color: #999;
+  margin: 7px 0;
+  position: relative;
+  line-height: 20px;
+  max-height: 80px;
+  overflow: hidden;
+}
+
+.flexbox .innerbox .desc:after {
+  content: "...";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-left: 40px;
 }
 
 .flexbox .innerflex {
@@ -192,7 +207,8 @@ img {
 
 .btn {
   display: inline-block;
-  padding: 3px 10px;
+  margin: 3px;
+  font-size: 12px;
   border-radius: 5px;
 }
 
@@ -202,6 +218,15 @@ img {
 }
 
 .btn-green:hover {
+  animation-name: swing;
+}
+
+.btn-gray {
+  border: 1px solid #777;
+  color: #fff;
+}
+
+.btn-gray:hover {
   animation-name: swing;
 }
 
@@ -341,7 +366,8 @@ img {
   margin: 1%;
   padding: 1.5%;
   border: 1px solid #e5e5e5;
-  width: 44%;
+  box-sizing: border-box;
+  width: 48%;
   transition: 0.5s ease-in;
   -webkit-transition: 0.5s ease-in;
   -moz-transition: 0.5s ease-in;
@@ -701,9 +727,138 @@ img {
   border-color: #3a8ee6;
 }
 
+.cartModal.fade .modal-dialog {
+  transform: translate3d(0, 100vh, 0);
+}
+
+.cartModal.in .modal-dialog {
+  transform: translate3d(0, 20vh, 0);
+}
+
+.cartModal .modal-header {
+  border: none;
+}
+
+.cartModal .close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.cartModal .imgcon {
+  margin-bottom: 10px;
+}
+
+.cartModal .tit {
+  color: #666;
+}
+
+.cartModal .tit .price {
+  font-size: 24px;
+  color: #8fb13d;
+}
+
+.cartModal .tit .price em {
+  font-size: 12px;
+  padding-right: 3px;
+  font-style: normal;
+}
+
+.cartModal .modal-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cartModal .modal-title .pic {
+  width: 35%;
+  margin-right: 3%;
+}
+
+.cartModal .modal-title .pic img {
+  width: 100%;
+}
+
+.cartModal .modal-body {
+  max-height: 55vh;
+  padding: 0;
+  overflow: auto;
+}
+
+.cartModal .modal-body .modal-body-cont {
+  padding: 15px;
+}
+
+.cartModal .modal-body img {
+  width: 100%;
+}
+
+.cartModal .modal-body .pro-name {
+  font-size: 16px;
+}
+
+.cartModal .modal-body .pro-desc {
+  font-size: 14px;
+  color: #999;
+  margin: 7px 0;
+}
+
+.cartModal .modal-body .nums {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cartModal .modal-body .nums .cont {
+  width: 102px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.cartModal .modal-body .nums .cont input {
+  border: medium none;
+  width: 100%;
+  height: 18px;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 18px;
+}
+
+.cartModal .modal-body .nums .cont a {
+  font-size: 16px;
+  display: inline-block;
+  font-weight: bold;
+  width: 40px;
+  line-height: 18px;
+  text-align: center;
+  color: #666;
+  cursor: pointer;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.cartModal .modal-body .nums .cont .minipage .content .numcon .numberInput {
+  display: inline-block;
+  width: 50px;
+  vertical-align: middle;
+}
+
+.cartModal .modal-body .nums .cont .plus {
+  border-right: 1px solid #999;
+}
+
+.cartModal .modal-body .nums .cont .reduce {
+  border-left: 1px solid #999;
+}
+
 @media screen and (min-width: 300px) and (max-width: 360px) {
   .nav .menu {
     margin-left: 4%;
+  }
+  .btn {
+    padding: 2px 5px;
   }
 }
 
@@ -751,7 +906,8 @@ img {
     margin: 1%;
     padding: 1.5%;
     border: 1px solid #e5e5e5;
-    width: 44%;
+    box-sizing: border-box;
+    width: 48%;
   }
   .footer .footer-middle label.line {
     width: 90px;
@@ -801,7 +957,7 @@ img {
     margin: 1%;
     padding: 1.5%;
     border: 1px solid #e5e5e5;
-    width: 19%;
+    width: 22%;
   }
   .footer .footer-middle label.line {
     width: 100px;
